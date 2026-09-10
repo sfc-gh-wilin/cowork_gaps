@@ -1,0 +1,170 @@
+# CoWork Gaps: Project Plan
+
+> **Goal:** Build a generalizable chatbot application that fills CoWork's application-layer gaps, identifies product shortcomings, and maximizes TAM across customers.
+
+**Team:** Daniel Sandler (Lead/Architect), Jake Neal (Customer Requirements / Invesco), Stephanie Higa (Development), William Lin (Development)
+
+**Customer Context:** Invesco wants a CoWork-like experience ("Central Investment Intelligence") with added features -- shared artifacts, standard prompts, and customizable UI. This need is not unique to Invesco; multiple customers want "CoWork but with X, Y, Z."
+
+**Slack Channel:** IntSD Chatbot Offering
+
+---
+
+## 1. Problem Statement
+
+CoWork today handles the **agentic layer** well (Cortex Agents, semantic views, search, tools). What's missing is the **application layer** -- the UX and orchestration features customers need to deploy a production-grade chat experience. Customers end up requesting custom apps that replicate CoWork's core features plus customer-specific additions.
+
+### CoWork Application-Layer Gaps (per Jake Neal)
+
+| # | Gap | Description |
+|---|-----|-------------|
+| 1 | Chart Visualizations / Markdown | Render charts, tables, and rich markdown in agent responses |
+| 2 | Citations | Show source references for agent-generated answers |
+| 3 | Tool Output Formatting | Format outputs from Cortex tools (search results, SQL results, etc.) |
+| 4 | Chat State Management | Recent chats, conversation history via Thread API |
+| 5 | Interactivity / Input Processing | User interactions beyond simple text (buttons, forms, selections) |
+| 6 | Streaming Responses | Real-time token streaming for agent responses |
+
+### Customer-Specific Features (Invesco Example)
+
+| # | Feature | Description |
+|---|---------|-------------|
+| 7 | Standard Prompts | Curated prompt library by category (Credit Research, Portfolio, Risk) with frequency/quality ranking |
+| 8 | Shared Artifacts | Pinned reports/dashboards accessible to all users (e.g., "Last IST Meeting Summary", "Real-Time Credit Risk Dashboard") |
+
+---
+
+## 2. Architecture Overview
+
+Based on Daniel Sandler's whiteboard (meeting 2026-09-08):
+
+```
++------------------+       +-------------------------------+       +-----------+
+|  Cortex Agent    | <---> |  Application Layer ("CII")    | <---> |  End Users|
+|  (Agentic Layer) |       |  - Prompt Library             |       |  - PM     |
+|  - Semantic Views|       |  - Shared Artifacts           |       |  - Analyst|
+|  - Cortex Search |       |  - Chat State / Thread Mgmt   |       |  - LR     |
+|  - Tools         |       |  - Streaming / Formatting     |       |           |
++------------------+       +-------------------------------+       +-----------+
+                                      |
+                                      v
+                           +---------------------+
+                           |  Snowflake Backend  |
+                           |  - Prompt Log Table |
+                           |  - Artifact Registry|
+                           |  - User Preferences |
+                           +---------------------+
+```
+
+**Key design principle:** One database, one schema houses the agent, prompt log table, and artifact registry. Prompts are collected, stored, classified after the fact into canonical prompts, and surfaced by frequency and quality.
+
+---
+
+## 3. Workstreams
+
+### Workstream 1: Standard Prompts / Prompt Library (Priority 1)
+
+Daniel identified this as the first deliverable -- "building out the prompt library is the first one."
+
+**What it does:**
+- Collects every user prompt and agent response into a log table
+- Classifies prompts after the fact into canonical categories (e.g., Credit Research, Portfolio, Risk)
+- Surfaces the most frequent and highest-quality prompts as "Standard Prompts" in the UI
+- Supports category-based organization with counts (e.g., "Credit Research: 3", "Portfolio: 3")
+
+**Tasks:**
+1. Design prompt log table schema (prompt text, response, user, timestamp, classification, quality score)
+2. Build prompt ingestion -- capture every agent interaction
+3. Implement post-hoc classification (AI_CLASSIFY or manual tagging) to map prompts to canonical categories
+4. Build frequency/quality ranking logic
+5. Build UI: sidebar with categorized standard prompts, click-to-run behavior
+6. Support "Frequently Used" as an auto-generated category
+
+**Reference:** Invesco mockup shows sidebar with "Credit Research (3)", "Portfolio (3)", "Risk (3)", "Frequently Used (3)" under "STANDARD PROMPTS", plus template cards like "RATING WATCH", "ISSUER DEEP DIVE", "SECTOR SCAN".
+
+---
+
+### Workstream 2: Shared Artifacts (Priority 2)
+
+Daniel noted this is "going to be hard" but is the second key deliverable.
+
+**What it does:**
+- Named, pinned artifacts (reports, dashboards, data snapshots) visible to all users on the home screen
+- Each artifact has a title, icon, last-updated timestamp, and auto-refresh capability
+- Artifacts are generated by agent runs and registered in an artifact registry table
+
+**Tasks:**
+1. Design artifact registry table (name, type, content/reference, owner, created_at, updated_at, icon, schedule)
+2. Define artifact types (SQL result set, HTML report, chart, summary text)
+3. Build artifact creation flow -- agent produces output, user or system "pins" it as a shared artifact
+4. Build artifact refresh mechanism (scheduled re-execution of the generating prompt/query)
+5. Build UI: grid of artifact cards on home screen with title, icon, and timestamp
+6. Implement RBAC for artifact visibility (who can see/edit/delete)
+
+**Reference:** Invesco mockup shows artifact cards: "Last IST Meeting Summary", "Overnight Credit Rating Actions", "Real-Time Credit Risk Dashboard", "New Issue Pipeline", "Muni Watchlist Changes", "Macro & Rates Snapshot", "Compliance Alerts", "Fund Flows Summary". CoWork (Snowhouse) already has a built-in Artifacts section with refresh, copy, and link icons -- study this as a reference.
+
+---
+
+### Workstream 3: Core Chat UX (Parallel)
+
+These are the foundational CoWork-equivalent features the app needs.
+
+| Task | Description |
+|------|-------------|
+| Streaming Responses | Implement SSE/WebSocket streaming from Cortex Agent to UI |
+| Markdown Rendering | Parse and render markdown, tables, code blocks in responses |
+| Chart Visualizations | Render charts (bar, line, pie) from structured agent output |
+| Citations | Display source references inline and as footnotes |
+| Tool Output Formatting | Format Cortex Search results, SQL query results, tool calls |
+| Chat History | Thread API integration for conversation persistence and "recent chats" sidebar |
+| Input Processing | Text input with send button, placeholder examples, potential for structured inputs |
+
+---
+
+## 4. Due Diligence: Existing Platform Capabilities
+
+Daniel requested we check what already exists before building. Investigate:
+
+| Area | Question |
+|------|----------|
+| AI Gateway (Natoma) | Does it provide any of the application-layer features (streaming, formatting, state)? |
+| Observe | Does it cover prompt logging, classification, or quality scoring? |
+| CoWork Artifacts | How do built-in CoWork artifacts work? Can we leverage or extend them? |
+| Thread API | What state management does the Cortex Agent Thread API provide today? |
+| Cortex Agent REST API | What streaming / response formatting is available natively? |
+
+**Goal:** Fail fast -- determine what needs a custom solution vs. what's already available.
+
+---
+
+## 5. Deliverables
+
+| # | Deliverable | Description |
+|---|-------------|-------------|
+| D1 | Gap Analysis Report | Documented assessment of each CoWork gap with platform capability status |
+| D2 | Prompt Library MVP | Working standard prompts with categorization and frequency ranking |
+| D3 | Shared Artifacts MVP | Artifact registry with pinned artifacts on home screen |
+| D4 | Core Chat App | Generalizable app with streaming, markdown, charts, citations, chat history |
+| D5 | CoWork Product Feedback | Formal gap report to CoWork product team on what customers need |
+
+---
+
+## 6. Open Questions
+
+1. **Name:** The project needs a name beyond "chatbot" (Daniel: "something like Liberty Prime"). TBD.
+2. **Deployment model:** Streamlit-in-Snowflake, SPCS, or standalone web app?
+3. **Artifact storage:** Where do artifact outputs live -- Snowflake tables, stages, or workspaces?
+4. **Artifact refresh:** Scheduled tasks, or on-demand re-execution?
+5. **Multi-tenancy:** How does the prompt library handle per-user vs. org-wide prompts?
+6. **RBAC:** How granular does artifact and prompt access control need to be?
+
+---
+
+## 7. Reference Materials
+
+| File | Description |
+|------|-------------|
+| `ref/20260903 invesco ui mock up screen shot.png` | Invesco's "Central Investment Intelligence" UI mockup |
+| `ref/Screenshot 2026-09-08 at 2.25.43 PM.png` | Daniel's whiteboard architecture drawing from meeting |
+| `ref/20260908_image.png` | CoWork built-in artifacts example from Snowhouse |
+| `ref/Jake's Chatbot Transcript.txt` | Full meeting transcript (Daniel, Stephanie, William - 2026-09-08) |

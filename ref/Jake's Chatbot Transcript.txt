@@ -1,0 +1,1262 @@
+WEBVTT
+
+00:01:28.000 --> 00:01:29.000
+Stephanie Higa ❄️: Hey, William.
+
+00:01:30.000 --> 00:01:33.000
+William Lin | Snowflake: Hey!
+
+00:01:32.000 --> 00:01:37.000
+Stephanie Higa ❄️: Yeah, I was just in a MDO meeting with Dan, so he said he wanted to join too.
+
+00:01:36.000 --> 00:01:39.000
+William Lin | Snowflake: Good to see you.
+
+00:01:38.000 --> 00:01:40.000
+Daniel Sandler: Everyone.
+
+00:01:41.000 --> 00:01:53.000
+William Lin | Snowflake: Thank you for joining to make this quick. So Stephanie, you can see that the message that from Jay the other day, I'm sharing my screen as well.
+
+00:01:50.000 --> 00:01:52.000
+Stephanie Higa ❄️: Mmhm.
+
+00:01:52.000 --> 00:01:53.000
+Stephanie Higa ❄️: Mm-hmm.
+
+00:01:53.000 --> 00:02:09.000
+William Lin | Snowflake: Seems like this in Westco, right? I he didn't say mention the name here, but most likely in Westco like to have their own Chatbot as their product. So doing what co-workers doing, probably with their own agent.
+
+00:02:09.000 --> 00:02:19.000
+William Lin | Snowflake: So this is more a client product, but I guess in here, we try to make it more genetic to work for other customers as well.
+
+00:02:18.000 --> 00:02:20.000
+Stephanie Higa ❄️: Mm-mm.
+
+00:02:20.000 --> 00:02:22.000
+William Lin | Snowflake: Yeah, that's doable.
+
+00:02:22.000 --> 00:02:26.000
+Daniel Sandler: So, the thing is, though, I question, like, so the…
+
+00:02:26.000 --> 00:02:31.000
+Daniel Sandler: I I would. I would be very reluctant to sort of like.
+
+00:02:31.000 --> 00:02:32.000
+Daniel Sandler: Like.
+
+00:02:32.000 --> 00:02:37.000
+Daniel Sandler: Um, build something outside of, like, co-work.
+
+00:02:37.000 --> 00:02:38.000
+William Lin | Snowflake: Mmhm.
+
+00:02:43.000 --> 00:02:44.000
+William Lin | Snowflake: Mm-hmm.
+
+00:02:49.000 --> 00:02:51.000
+William Lin | Snowflake: Uh-huh.
+
+00:03:03.000 --> 00:03:04.000
+William Lin | Snowflake: Oh.
+
+00:03:04.000 --> 00:03:10.000
+William Lin | Snowflake: Yeah, wrap around something that presented in with clients branding.
+
+00:03:10.000 --> 00:03:17.000
+Daniel Sandler: I don't think they need the branding, they just want the, like, the… here's what Kyle shared with me.
+
+00:03:16.000 --> 00:03:19.000
+William Lin | Snowflake: Uh-huh, I didn't stop there.
+
+00:03:17.000 --> 00:03:22.000
+Daniel Sandler: So, there was a separate, you know, thread, let's say.
+
+00:03:22.000 --> 00:03:23.000
+William Lin | Snowflake: All right.
+
+00:03:23.000 --> 00:03:24.000
+Daniel Sandler: Um…
+
+00:03:30.000 --> 00:03:32.000
+Daniel Sandler: Kyle…
+
+00:03:34.000 --> 00:03:35.000
+Daniel Sandler: Okay.
+
+00:03:38.000 --> 00:03:42.000
+Daniel Sandler: Single icon takes… I mean, that… this… when I haven't…
+
+00:03:42.000 --> 00:03:47.000
+Daniel Sandler: They don't have to pick warehouses, and they don't really have to pick Asians.
+
+00:03:47.000 --> 00:03:49.000
+William Lin | Snowflake: Mm-hmm.
+
+00:03:48.000 --> 00:03:53.000
+Daniel Sandler: Like, basically, if you design it the right way, you just have one entry point.
+
+00:04:14.000 --> 00:04:21.000
+Daniel Sandler: to moving forward with cowork. Um, you definitely don't have to pick your own warehouse.
+
+00:04:21.000 --> 00:04:22.000
+William Lin | Snowflake: Alright.
+
+00:04:21.000 --> 00:04:36.000
+Daniel Sandler: It should be the default, the default for the user. That's pretty straightforward. And the agency, literally you just need one entry point agent and the agent will determine what the appropriate sub-agent is.
+
+00:04:36.000 --> 00:04:38.000
+William Lin | Snowflake: Mm-hmm.
+
+00:04:37.000 --> 00:04:42.000
+Daniel Sandler: And the other, like… and each sub-agent is a tool of the…
+
+00:04:42.000 --> 00:04:44.000
+Daniel Sandler: Like, the entry point agent.
+
+00:04:44.000 --> 00:04:51.000
+Daniel Sandler: Right, so from a user perspective, they just need to know that entry point agent, and everything else is decided for them.
+
+00:04:51.000 --> 00:04:53.000
+William Lin | Snowflake: Mm, mm-hmm.
+
+00:04:53.000 --> 00:04:57.000
+Daniel Sandler: Um, the real thing that I've heard is the prompts and categories.
+
+00:04:57.000 --> 00:05:04.000
+Daniel Sandler: So, all this should be transparent to the user. They don't have to select… like, they shouldn't have to select anything.
+
+00:05:04.000 --> 00:05:09.000
+Daniel Sandler: Right? If it… like, we see this when we go into co-work today.
+
+00:05:09.000 --> 00:05:11.000
+Daniel Sandler: um…
+
+00:05:10.000 --> 00:05:12.000
+William Lin | Snowflake: You pick your agent, yeah.
+
+00:05:12.000 --> 00:05:15.000
+Daniel Sandler: Uh, well, you could pick your agent, but, like, it can…
+
+00:05:16.000 --> 00:05:22.000
+Daniel Sandler: Determine what agents you have access to, and based on the context, it can route you to the appropriate agent.
+
+00:05:22.000 --> 00:05:27.000
+Daniel Sandler: But to be very explicit, like, we could have…
+
+00:05:27.000 --> 00:05:30.000
+Daniel Sandler: The one single agent.
+
+00:05:30.000 --> 00:05:36.000
+Daniel Sandler: That acts as the entry point. And everything else, so you have, let's say, sales here.
+
+00:05:32.000 --> 00:05:34.000
+William Lin | Snowflake: Mmhm.
+
+00:05:36.000 --> 00:05:42.000
+Daniel Sandler: Um, inventory there, like, all these things are different, like, at least with, like.
+
+00:05:42.000 --> 00:05:44.000
+Daniel Sandler: You know, um…
+
+00:05:44.000 --> 00:05:55.000
+Daniel Sandler: like, in Snow House, you're routed to Raven, you're routed to a sales assistant, a product roadmap assistant, all these are different agents.
+
+00:05:55.000 --> 00:05:56.000
+William Lin | Snowflake: Mmhm.
+
+00:05:55.000 --> 00:05:58.000
+Daniel Sandler: Right? So…
+
+00:05:58.000 --> 00:06:04.000
+Daniel Sandler: in… whether it's the Streamlit app or Cowork, you still need a fleet of agents.
+
+00:06:03.000 --> 00:06:05.000
+William Lin | Snowflake: Mm-hmm.
+
+00:06:04.000 --> 00:06:08.000
+Daniel Sandler: that represent the subject areas in the business domains.
+
+00:06:08.000 --> 00:06:09.000
+William Lin | Snowflake: Mm-hmm.
+
+00:06:08.000 --> 00:06:12.000
+Daniel Sandler: That will retrieve the information in a conversational manner.
+
+00:06:12.000 --> 00:06:13.000
+William Lin | Snowflake: Mmhm.
+
+00:06:12.000 --> 00:06:18.000
+Daniel Sandler: Right, so the categorization is basically how you define and design your…
+
+00:06:21.000 --> 00:06:24.000
+Daniel Sandler: And the rest is tooling, so, like…
+
+00:06:21.000 --> 00:06:22.000
+William Lin | Snowflake: Okay.
+
+00:06:24.000 --> 00:06:30.000
+Daniel Sandler: The thing that isn't built in, that probably requires some additional thought.
+
+00:06:30.000 --> 00:06:35.000
+Daniel Sandler: Is. How do we provide the. Where was it?
+
+00:06:37.000 --> 00:06:40.000
+Daniel Sandler: And so you can see here what they're looking for.
+
+00:06:41.000 --> 00:06:44.000
+Daniel Sandler: And they've got, like, some sort of…
+
+00:06:44.000 --> 00:06:46.000
+Daniel Sandler: Did Jake share these with you?
+
+00:06:46.000 --> 00:06:50.000
+Stephanie Higa ❄️: Mm-hmm. Yep. Put them in the chat, I believe.
+
+00:06:46.000 --> 00:06:49.000
+William Lin | Snowflake: No. Oh, okay.
+
+00:06:47.000 --> 00:06:49.000
+Daniel Sandler: You did? Okay.
+
+00:06:49.000 --> 00:06:51.000
+Daniel Sandler: Yeah, okay.
+
+00:06:50.000 --> 00:06:52.000
+Stephanie Higa ❄️: The channel. Yeah.
+
+00:06:51.000 --> 00:06:56.000
+Daniel Sandler: So, like, to me, this is very, like, honestly…
+
+00:06:56.000 --> 00:07:00.000
+Daniel Sandler: I don't like the standard prompts. I don't think we even want.
+
+00:07:17.000 --> 00:07:22.000
+Daniel Sandler: And categorize, and have it basically pick one.
+
+00:07:21.000 --> 00:07:23.000
+William Lin | Snowflake: Mmhm.
+
+00:07:22.000 --> 00:07:27.000
+Daniel Sandler: You know, and the ones that it picks are the ones that it gets from all the other users.
+
+00:07:27.000 --> 00:07:30.000
+Daniel Sandler: Right. What they've asked…
+
+00:07:34.000 --> 00:07:36.000
+Daniel Sandler: And it can categorize it.
+
+00:07:36.000 --> 00:07:38.000
+William Lin | Snowflake: Mmhm.
+
+00:07:40.000 --> 00:07:48.000
+Daniel Sandler: So some of it is very, it's basically an Agentic design that leverages cowork as the interface.
+
+00:07:48.000 --> 00:07:50.000
+Daniel Sandler: I don't think this is, like…
+
+00:07:51.000 --> 00:07:53.000
+Daniel Sandler: Like, this is…
+
+00:07:53.000 --> 00:07:56.000
+Daniel Sandler: Okay, like, um, so…
+
+00:07:56.000 --> 00:07:59.000
+Daniel Sandler: I guess these are apps that are built?
+
+00:07:59.000 --> 00:08:03.000
+William Lin | Snowflake: Well, this is a markup, but it seems like an app on its own.
+
+00:08:03.000 --> 00:08:07.000
+William Lin | Snowflake: that in the background talks to cowork.
+
+00:08:06.000 --> 00:08:11.000
+Daniel Sandler: So the sharing of artifacts is something that is more challenging.
+
+00:08:11.000 --> 00:08:15.000
+Daniel Sandler: Right, so if you generate a chart.
+
+00:08:15.000 --> 00:08:20.000
+Daniel Sandler: With co-work. Being able to save that and share it with others.
+
+00:08:16.000 --> 00:08:17.000
+William Lin | Snowflake: Mm-hmm.
+
+00:08:20.000 --> 00:08:21.000
+William Lin | Snowflake: Yeah.
+
+00:08:20.000 --> 00:08:25.000
+Daniel Sandler: Um, we'd have to, like, figure out if that's possible.
+
+00:08:25.000 --> 00:08:27.000
+William Lin | Snowflake: Mmhm.
+
+00:08:30.000 --> 00:08:36.000
+William Lin | Snowflake: Well, earlier you were against branding, but…
+
+00:08:34.000 --> 00:08:46.000
+Daniel Sandler: Well, I should say, let me… it's not… so the branding is one thing. Like, um… I don't think branding is, like, the real reason why they're doing this.
+
+00:08:45.000 --> 00:08:48.000
+William Lin | Snowflake: Okay. You're welcome.
+
+00:08:46.000 --> 00:08:59.000
+Daniel Sandler: Right? I get why they want, like, their… but, like, let's say it's less about branding, and it's more about making it more accessible to people who aren't necessarily familiar with Snowflake.
+
+00:08:59.000 --> 00:09:00.000
+William Lin | Snowflake: Mmhm.
+
+00:08:59.000 --> 00:09:01.000
+Daniel Sandler: co-work, and everything else.
+
+00:09:01.000 --> 00:09:02.000
+William Lin | Snowflake: Thank you.
+
+00:09:01.000 --> 00:09:09.000
+Daniel Sandler: Right. They… they simply want… they want to… I sort of made the analogy of… they want to.
+
+00:09:09.000 --> 00:09:14.000
+Daniel Sandler: swim in the wake of, like, the people that are, like, really power users.
+
+00:09:14.000 --> 00:09:15.000
+William Lin | Snowflake: Mm-hmm.
+
+00:09:14.000 --> 00:09:15.000
+Daniel Sandler: Right?
+
+00:09:15.000 --> 00:09:24.000
+Daniel Sandler: Um, and piggyback on, on their prompts, because what they're asking, like, the useful stuff that they're asking for.
+
+00:09:24.000 --> 00:09:28.000
+Daniel Sandler: They think like others can benefit from it.
+
+00:09:28.000 --> 00:09:43.000
+William Lin | Snowflake: Same thing back to Honeywell or maybe the other one. They have the same request as well because a lot of time, yeah, just Honeywell at that time. When you just let people sit on cohort, they don't know what to do. But with the app.
+
+00:09:29.000 --> 00:09:30.000
+Daniel Sandler: Beautiful.
+
+00:09:43.000 --> 00:09:50.000
+William Lin | Snowflake: They're more familiarized with it, and the app leads them to steps.
+
+00:09:49.000 --> 00:09:51.000
+Daniel Sandler: I mean, but I'm…
+
+00:09:51.000 --> 00:09:55.000
+Daniel Sandler: I… what I'm trying to say is, I'd rather steer clear of an app.
+
+00:09:55.000 --> 00:10:04.000
+Daniel Sandler: An app is something they have to build, and they have to maintain… well, we could build for them, we deploy it, and then what do they do? They have to manage this.
+
+00:10:04.000 --> 00:10:06.000
+William Lin | Snowflake: Gotcha.
+
+00:10:04.000 --> 00:10:05.000
+Daniel Sandler: Bye.
+
+00:10:05.000 --> 00:10:11.000
+Daniel Sandler: you know, I'm pretty sure along the way that this is going to… like, all this stuff would be…
+
+00:10:11.000 --> 00:10:18.000
+Daniel Sandler: like, eventually available inside of Snowflake, right? But it will be within the co-work.
+
+00:10:18.000 --> 00:10:21.000
+Daniel Sandler: User experience. You know?
+
+00:10:20.000 --> 00:10:22.000
+William Lin | Snowflake: True. Yeah.
+
+00:10:24.000 --> 00:10:25.000
+Daniel Sandler: um…
+
+00:10:25.000 --> 00:10:27.000
+Daniel Sandler: I, like…
+
+00:10:27.000 --> 00:10:34.000
+Daniel Sandler: We can provide feedback to, like, the product team. This is a common thing you'll hear from me and Ganesh.
+
+00:10:34.000 --> 00:10:35.000
+Stephanie Higa ❄️: Mm-hmm.
+
+00:10:35.000 --> 00:10:39.000
+Daniel Sandler: We should be sharing this back to product.
+
+00:10:35.000 --> 00:10:36.000
+Stephanie Higa ❄️: Yeah. Okay.
+
+00:10:39.000 --> 00:10:44.000
+Stephanie Higa ❄️: Yeah, yeah, we definitely shouldn't be, like, reinventing co-work.
+
+00:10:39.000 --> 00:10:41.000
+William Lin | Snowflake: Yeah, good point.
+
+00:10:39.000 --> 00:10:40.000
+Daniel Sandler: You know?
+
+00:10:43.000 --> 00:10:44.000
+William Lin | Snowflake: Mmhm.
+
+00:10:43.000 --> 00:10:44.000
+Daniel Sandler: Right.
+
+00:10:44.000 --> 00:10:45.000
+Stephanie Higa ❄️: Okay.
+
+00:10:44.000 --> 00:10:47.000
+William Lin | Snowflake: This is a product gap. Yeah, good.
+
+00:10:46.000 --> 00:10:52.000
+Daniel Sandler: But I think there's some edges. Well, yes, we could state it as a product gap, but, like.
+
+00:10:52.000 --> 00:11:04.000
+Daniel Sandler: what we're finding is a way to work around it, you know? And I think there's a… there… aside from these artifacts, the artifact thing, I think, is, like, we're more dependent on…
+
+00:10:55.000 --> 00:10:56.000
+William Lin | Snowflake: Mm-hmm.
+
+00:11:04.000 --> 00:11:05.000
+Daniel Sandler: like, how…
+
+00:11:05.000 --> 00:11:12.000
+Daniel Sandler: how those artifacts are generated within a co-work conversation, like that session.
+
+00:11:12.000 --> 00:11:14.000
+Daniel Sandler: And then available to others.
+
+00:11:14.000 --> 00:11:18.000
+Daniel Sandler: Right? Because that's something that…
+
+00:11:19.000 --> 00:11:25.000
+Daniel Sandler: I'd have to. We'd have to do some more exploration to see what's available there.
+
+00:11:25.000 --> 00:11:27.000
+William Lin | Snowflake: Mm-hmm.
+
+00:11:28.000 --> 00:11:39.000
+William Lin | Snowflake: These artifacts are mainly sharing, so team sharing. Right now in cowork, I think you can access histories. But if we work as a team.
+
+00:11:38.000 --> 00:11:43.000
+Daniel Sandler: That's only within your session, though. So those are your sessions.
+
+00:11:42.000 --> 00:11:43.000
+William Lin | Snowflake: Right.
+
+00:11:43.000 --> 00:11:48.000
+Daniel Sandler: But, like, what they're asking for is, look beyond.
+
+00:11:47.000 --> 00:11:50.000
+William Lin | Snowflake: Yes, yes, sharing to the team.
+
+00:11:49.000 --> 00:11:52.000
+Daniel Sandler: Across all users, you know?
+
+00:11:51.000 --> 00:11:52.000
+William Lin | Snowflake: Yep. Mm-hmm.
+
+00:11:54.000 --> 00:12:01.000
+Daniel Sandler: And there's some… there's some legitimate, like, questions, like, because they can't really see the details of a prompt.
+
+00:12:01.000 --> 00:12:08.000
+Daniel Sandler: So, like, we'd have to, like, make sure they're comfortable with an agent tool that would collect.
+
+00:12:08.000 --> 00:12:13.000
+Daniel Sandler: Um, prompt information and responses.
+
+00:12:13.000 --> 00:12:20.000
+Daniel Sandler: You know, because that's where, you know, it's less about looking at query history, you're actually looking at.
+
+00:12:20.000 --> 00:12:24.000
+Daniel Sandler: People, like, it's almost like, you know, people are messaging with the agent.
+
+00:12:24.000 --> 00:12:25.000
+William Lin | Snowflake: Mmhm.
+
+00:12:24.000 --> 00:12:25.000
+Daniel Sandler: You know?
+
+00:12:28.000 --> 00:12:30.000
+William Lin | Snowflake: So what's the…
+
+00:12:28.000 --> 00:12:38.000
+Daniel Sandler: Now, that's my interpretation of it. I would steer clear of… because what I get nervous of is, William, when you say someone like Honeywell is looking for this.
+
+00:12:36.000 --> 00:12:38.000
+William Lin | Snowflake: Mmhm.
+
+00:12:38.000 --> 00:12:39.000
+William Lin | Snowflake: Mmhm.
+
+00:12:38.000 --> 00:12:44.000
+Daniel Sandler: Invesco is probably not the only customer that has asked for this.
+
+00:12:43.000 --> 00:12:45.000
+William Lin | Snowflake: There.
+
+00:12:44.000 --> 00:12:48.000
+Daniel Sandler: You know, if the solution we come up with is.
+
+00:12:45.000 --> 00:12:46.000
+William Lin | Snowflake: Dylan? Oh, perfect.
+
+00:12:48.000 --> 00:12:54.000
+Daniel Sandler: is a custom app, then think about all the tech debt that we are perpetuating.
+
+00:12:53.000 --> 00:12:55.000
+Stephanie Higa ❄️: Mm-hmm.
+
+00:12:54.000 --> 00:12:56.000
+William Lin | Snowflake: Yeah, yeah.
+
+00:12:55.000 --> 00:12:58.000
+Daniel Sandler: That's what I would try to avoid.
+
+00:12:58.000 --> 00:13:01.000
+William Lin | Snowflake: So this is really a product team sport.
+
+00:12:59.000 --> 00:13:12.000
+Daniel Sandler: I mean, in its own way, if we, like, have tools, and, like, those tools are… they're its own form of tech debt, because until the product can do.
+
+00:13:12.000 --> 00:13:22.000
+Daniel Sandler: this, and what I mentioned with Stephanie on the previous call is, I don't know if Natoma can do any of this, or Observe.
+
+00:13:22.000 --> 00:13:33.000
+Daniel Sandler: Like, so, some of this is observability into prompts across all users. You know, categorizing all the prompts, context, that's, I think, what…
+
+00:13:27.000 --> 00:13:28.000
+William Lin | Snowflake: Mmhm.
+
+00:13:33.000 --> 00:13:43.000
+Daniel Sandler: Natoma and the AI Gateway is supposed to do. I just don't know where it's at, you know? I'm assuming the worst case is that these things can't…
+
+00:13:43.000 --> 00:13:55.000
+Daniel Sandler: necessarily give Invesco what they need. There's some additional tooling, and with the right sort of example, working example, like, we could literally have Coco say.
+
+00:13:55.000 --> 00:14:11.000
+Daniel Sandler: This is their vision of what they want. This is their mockup. Let's try to get it work with Coco or Cowork. Have Coco generate agents that do like rating watch, issuer deep dive. Like these are all in like prompts categorized along these areas.
+
+00:14:11.000 --> 00:14:13.000
+William Lin | Snowflake: Yeah, yeah.
+
+00:14:12.000 --> 00:14:13.000
+Daniel Sandler: You know.
+
+00:14:13.000 --> 00:14:16.000
+Daniel Sandler: Um, and then create a tool that would…
+
+00:14:16.000 --> 00:14:19.000
+Daniel Sandler: Like, basically mimic users going in.
+
+00:14:19.000 --> 00:14:28.000
+Daniel Sandler: grabbing their prompts, scoring, like, how useful the response is from the agent, and then, like.
+
+00:14:28.000 --> 00:14:34.000
+Daniel Sandler: The frequency with which… because, like, there's topics within each.
+
+00:14:34.000 --> 00:14:38.000
+Daniel Sandler: Prompt, because people are going to rephrase things differently.
+
+00:14:38.000 --> 00:14:39.000
+William Lin | Snowflake: Mm-hmm.
+
+00:14:38.000 --> 00:14:42.000
+Daniel Sandler: Right? So there's some natural language processing there.
+
+00:14:42.000 --> 00:14:48.000
+Daniel Sandler: But certainly AI Complete can do that, and can parse out all of the…
+
+00:14:46.000 --> 00:14:47.000
+William Lin | Snowflake: Mm-hmm.
+
+00:14:49.000 --> 00:14:51.000
+Daniel Sandler: the topics, I'd say.
+
+00:14:51.000 --> 00:14:53.000
+Daniel Sandler: And then we can…
+
+00:14:53.000 --> 00:14:57.000
+Daniel Sandler: Like, categorize, here's all the…
+
+00:14:57.000 --> 00:15:03.000
+Daniel Sandler: Prompts have a sort of canonical representation of.
+
+00:15:03.000 --> 00:15:11.000
+Daniel Sandler: the prompt, and a score that says, like, which ones are useful based on frequency and quality of response.
+
+00:15:11.000 --> 00:15:12.000
+William Lin | Snowflake: Mm-hmm.
+
+00:15:15.000 --> 00:15:18.000
+William Lin | Snowflake: Yeah. Okay. Yeah. That's the thing.
+
+00:15:16.000 --> 00:15:21.000
+Daniel Sandler: And if you're able to do that within co-work.
+
+00:15:20.000 --> 00:15:21.000
+William Lin | Snowflake: Yes.
+
+00:15:21.000 --> 00:15:25.000
+Daniel Sandler: Those are two big things. One, it solves the customer's…
+
+00:15:25.000 --> 00:15:28.000
+Daniel Sandler: Challenge, what they're wrestling with.
+
+00:15:27.000 --> 00:15:29.000
+William Lin | Snowflake: Mmhm.
+
+00:15:28.000 --> 00:15:32.000
+Daniel Sandler: The second thing it does is it gives product.
+
+00:15:32.000 --> 00:15:33.000
+Daniel Sandler: This is what we need.
+
+00:15:33.000 --> 00:15:39.000
+Daniel Sandler: You know, this is what customers are asking for. They're gonna start building all these one-off apps.
+
+00:15:38.000 --> 00:15:40.000
+William Lin | Snowflake: Mmhm.
+
+00:15:39.000 --> 00:15:43.000
+Daniel Sandler: Um, unless you build this into…
+
+00:15:43.000 --> 00:15:47.000
+Daniel Sandler: The product. And they'll have to decide whether that's a combination of.
+
+00:15:47.000 --> 00:15:56.000
+Daniel Sandler: capturing additional context in Natoma, or, like, observe, or it's just, like, something that's…
+
+00:15:56.000 --> 00:15:57.000
+Daniel Sandler: Um, part of…
+
+00:15:57.000 --> 00:16:05.000
+Daniel Sandler: co-work. So that's sort of like, when I saw this, that's where my head started to go.
+
+00:16:05.000 --> 00:16:06.000
+William Lin | Snowflake: Yeah.
+
+00:16:06.000 --> 00:16:10.000
+William Lin | Snowflake: Sure, we will definitely go that route.
+
+00:16:15.000 --> 00:16:17.000
+William Lin | Snowflake: Um, we…
+
+00:16:15.000 --> 00:16:18.000
+Daniel Sandler: You can see right here, like, it's…
+
+00:16:18.000 --> 00:16:20.000
+Daniel Sandler: This is… this is…
+
+00:16:20.000 --> 00:16:27.000
+Daniel Sandler: It's coworker. Like, it's conversational. This is just, like, a layer on top.
+
+00:16:24.000 --> 00:16:26.000
+Stephanie Higa ❄️: Yeah.
+
+00:16:26.000 --> 00:16:27.000
+Stephanie Higa ❄️: It looks like color.
+
+00:16:27.000 --> 00:16:29.000
+Daniel Sandler: Yeah. Okay.
+
+00:16:28.000 --> 00:16:29.000
+William Lin | Snowflake: Mmhm.
+
+00:16:31.000 --> 00:16:36.000
+William Lin | Snowflake: I guess, Stephanie, have you done any work on this yet?
+
+00:16:36.000 --> 00:16:42.000
+Stephanie Higa ❄️: No, I mean, I was out of office last week, so I just found out about this today.
+
+00:16:39.000 --> 00:16:41.000
+William Lin | Snowflake: Oh, okay.
+
+00:16:41.000 --> 00:16:54.000
+William Lin | Snowflake: Really? I guess what we can do is we do some research and then group together, come up with the result, then present to Jake and Kyle.
+
+00:16:43.000 --> 00:16:45.000
+Stephanie Higa ❄️: Yeah, yeah. Mm-hmm.
+
+00:16:54.000 --> 00:16:57.000
+William Lin | Snowflake: And see what they think, if they like it or not.
+
+00:16:54.000 --> 00:16:55.000
+Stephanie Higa ❄️: Mm-hmm.
+
+00:16:57.000 --> 00:17:00.000
+Stephanie Higa ❄️: What's the timeline for this project?
+
+00:17:01.000 --> 00:17:04.000
+Daniel Sandler: Uh, so Invesco is, um…
+
+00:17:04.000 --> 00:17:09.000
+Daniel Sandler: It was very, like, urgent last week, but it's less so now.
+
+00:17:09.000 --> 00:17:10.000
+William Lin | Snowflake: I like it.
+
+00:17:09.000 --> 00:17:10.000
+Stephanie Higa ❄️: Okay.
+
+00:17:09.000 --> 00:17:20.000
+Daniel Sandler: So, um, I don't think we have a demo planned. I think it's more opportunistic. I would look at it as both of you have a finite window when you're available to work on projects like this.
+
+00:17:20.000 --> 00:17:21.000
+Stephanie Higa ❄️: Mm-hmm.
+
+00:17:20.000 --> 00:17:24.000
+Daniel Sandler: But this is the window. And so you have, like…
+
+00:17:24.000 --> 00:17:33.000
+Daniel Sandler: 2 to 3 weeks. At least, Stephanie, for you, probably 3 weeks. William, for you, more like 2 weeks, before you're gobbled up with other assignments.
+
+00:17:32.000 --> 00:17:34.000
+Stephanie Higa ❄️: Hmm. Yeah.
+
+00:17:35.000 --> 00:17:38.000
+William Lin | Snowflake: Great. Yeah, we have a plan.
+
+00:17:35.000 --> 00:17:36.000
+Stephanie Higa ❄️: Cool.
+
+00:17:37.000 --> 00:17:44.000
+Daniel Sandler: And it's one of those that it's like MDM, you know, it sort of came up.
+
+00:17:40.000 --> 00:17:41.000
+Stephanie Higa ❄️: Mm-hmm.
+
+00:17:44.000 --> 00:17:51.000
+Daniel Sandler: In the context of a customer opportunity, whether the customer fully pursues it or not, like, that's…
+
+00:17:51.000 --> 00:17:58.000
+Daniel Sandler: Like, I think we genuinely see how this could be a, um…
+
+00:17:58.000 --> 00:18:06.000
+Daniel Sandler: like a pervasive use case that illustrates how the product isn't fully meeting customer requirements.
+
+00:18:07.000 --> 00:18:10.000
+Daniel Sandler: And we have an opportunity to.
+
+00:18:10.000 --> 00:18:13.000
+Daniel Sandler: Like, basically, like, avoid some of the…
+
+00:18:13.000 --> 00:18:24.000
+Daniel Sandler: Like, tech debt, just avoid it entirely, get the most mileage out of co-work, and then feed that back, not just into a…
+
+00:18:24.000 --> 00:18:34.000
+Daniel Sandler: like, something that could be demoed and shared with other customers, that'd be great, but I think the more important thing is, like, feedback in the product.
+
+00:18:34.000 --> 00:18:38.000
+Daniel Sandler: You know, say this is how we saw this, how we.
+
+00:18:38.000 --> 00:18:46.000
+Daniel Sandler: Solve the problem in the short term, all the good stuff that goes with it, but still, it'd be better if it was just built in, because.
+
+00:18:46.000 --> 00:18:52.000
+Daniel Sandler: The things that we are… anything that we build is gonna be tech debt eventually. I'm convinced of that.
+
+00:18:52.000 --> 00:18:53.000
+Stephanie Higa ❄️: Okay.
+
+00:18:52.000 --> 00:18:53.000
+Daniel Sandler: You know.
+
+00:18:54.000 --> 00:18:56.000
+William Lin | Snowflake: Yeah.
+
+00:18:55.000 --> 00:18:56.000
+Stephanie Higa ❄️: That's true.
+
+00:18:58.000 --> 00:19:02.000
+Stephanie Higa ❄️: Okay. So where should we get started in terms of tasks?
+
+00:19:03.000 --> 00:19:10.000
+Daniel Sandler: So, my… what… the way I would approach it is, I would feed everything that Jake's given us into…
+
+00:19:11.000 --> 00:19:19.000
+Daniel Sandler: Cortex code, and start to, like, just go through and say, these are our understanding of the requirements and the user experience.
+
+00:19:20.000 --> 00:19:34.000
+Daniel Sandler: With one caveat, we do not want to build a custom app. We want to leverage everything in Cowork that will, um… and to do so, we understand that it has to be Agentic, and we have to have the right tools within.
+
+00:19:34.000 --> 00:19:39.000
+Daniel Sandler: an agent and sub-agent design. So, based on this mock-up, just have co…
+
+00:19:39.000 --> 00:19:52.000
+Daniel Sandler: Coco, like, builds… builds some agents that reflect, like, a financial institution. They have different agents for credit research, portfolio, um, management.
+
+00:19:52.000 --> 00:19:54.000
+Daniel Sandler: Risk management.
+
+00:19:54.000 --> 00:19:58.000
+Daniel Sandler: Um, and let's say a general agent for FAQs.
+
+00:19:58.000 --> 00:20:03.000
+Daniel Sandler: Right? And here's some examples of, like, prompts.
+
+00:20:03.000 --> 00:20:08.000
+Daniel Sandler: Artifacts, the user… the users want to collect.
+
+00:20:08.000 --> 00:20:20.000
+Daniel Sandler: like, the top 10 prompts, let's say, just across support or by category, you know? How could we do this within cohort? Because we do not want to…
+
+00:20:20.000 --> 00:20:27.000
+Daniel Sandler: Impose, like, this app that, um, will translate to TechDev.
+
+00:20:26.000 --> 00:20:28.000
+Stephanie Higa ❄️: Mm-hmm.
+
+00:20:27.000 --> 00:20:32.000
+Daniel Sandler: You know, Tom Coco, and see what it comes up with. See if it can actually…
+
+00:20:32.000 --> 00:20:45.000
+Daniel Sandler: build out not just, like, the agents, sub-agents, and tooling that align to this example, and to the high-level requirements. Just so we can see, okay.
+
+00:20:45.000 --> 00:20:51.000
+Daniel Sandler: Um, before we meet with Jake, this is what we can do based off our understanding of the…
+
+00:20:51.000 --> 00:20:53.000
+Daniel Sandler: Problem statement in the business domain.
+
+00:20:54.000 --> 00:20:58.000
+Daniel Sandler: Okay, and see how far we can get, like, and then…
+
+00:20:58.000 --> 00:21:02.000
+Daniel Sandler: We can have a conversation with Jake. That would be the next step. Step one would be…
+
+00:21:02.000 --> 00:21:07.000
+Daniel Sandler: Let's see what Coco… let's see how far Coco can take this.
+
+00:21:07.000 --> 00:21:15.000
+Stephanie Higa ❄️: Okay. Yeah, that makes sense. And Dan, you said portfolio management, risk management, general FAQs, and what was the last thing?
+
+00:21:16.000 --> 00:21:18.000
+Daniel Sandler: Um…
+
+00:21:18.000 --> 00:21:23.000
+Daniel Sandler: And then, I think… so that's sort of, like, the categorization.
+
+00:21:22.000 --> 00:21:26.000
+Stephanie Higa ❄️: Was there a fourth category, though? I think I missed one.
+
+00:21:23.000 --> 00:21:24.000
+Daniel Sandler: Right. So…
+
+00:21:26.000 --> 00:21:30.000
+Daniel Sandler: I think those are the… because I'm only going off of what I see here.
+
+00:21:28.000 --> 00:21:29.000
+Stephanie Higa ❄️: Okay.
+
+00:21:30.000 --> 00:21:31.000
+Stephanie Higa ❄️: Oh.
+
+00:21:30.000 --> 00:21:33.000
+Daniel Sandler: As… as an example.
+
+00:21:32.000 --> 00:21:34.000
+Stephanie Higa ❄️: Oh, credit research area.
+
+00:21:33.000 --> 00:21:34.000
+Daniel Sandler: Yeah.
+
+00:21:34.000 --> 00:21:40.000
+Daniel Sandler: Yeah. So basically like the way I think about like so this is the.
+
+00:21:40.000 --> 00:21:43.000
+Daniel Sandler: Agent. Like, this is the entry point.
+
+00:21:46.000 --> 00:21:51.000
+Daniel Sandler: EP for entry point, and then let's say you have…
+
+00:21:53.000 --> 00:21:56.000
+Daniel Sandler: These are all the sub-agents, so…
+
+00:21:57.000 --> 00:21:59.000
+Daniel Sandler: Credit research.
+
+00:22:01.000 --> 00:22:04.000
+Daniel Sandler: And Portfolio Management.
+
+00:22:06.000 --> 00:22:10.000
+Daniel Sandler: So each one of these are sub-agents, dot, dot, dot.
+
+00:22:10.000 --> 00:22:13.000
+Daniel Sandler: So, user always interacts with his.
+
+00:22:13.000 --> 00:22:22.000
+Daniel Sandler: It will basically determine what the, um, what the correct, uh, sub-agent is off of the prompt.
+
+00:22:22.000 --> 00:22:26.000
+Daniel Sandler: But then, there's a tool here, let's say…
+
+00:22:29.000 --> 00:22:31.000
+Daniel Sandler: Let's see…
+
+00:22:31.000 --> 00:22:32.000
+Daniel Sandler: gear.
+
+00:22:33.000 --> 00:22:38.000
+Daniel Sandler: It's a tool here that attaches to each one of these things.
+
+00:22:39.000 --> 00:22:44.000
+Daniel Sandler: And so that is going to collect prompt information.
+
+00:22:45.000 --> 00:22:46.000
+Daniel Sandler: Prompt.
+
+00:22:48.000 --> 00:22:51.000
+Daniel Sandler: And then… dot, dot, dot…
+
+00:22:51.000 --> 00:22:53.000
+Daniel Sandler: And then response.
+
+00:22:58.000 --> 00:23:04.000
+Daniel Sandler: Dot, dot, dot. So the prompt and the response will determine frequency.
+
+00:23:04.000 --> 00:23:07.000
+Daniel Sandler: And quality of the…
+
+00:23:07.000 --> 00:23:08.000
+Daniel Sandler: Interaction.
+
+00:23:09.000 --> 00:23:15.000
+Daniel Sandler: And so that feeds back into this prompt universe.
+
+00:23:14.000 --> 00:23:16.000
+Stephanie Higa ❄️: Fair.
+
+00:23:15.000 --> 00:23:17.000
+Daniel Sandler: So the prompt universe.
+
+00:23:17.000 --> 00:23:23.000
+Daniel Sandler: At the point you have collected and quantified and qualified.
+
+00:23:23.000 --> 00:23:25.000
+Daniel Sandler: Each one of these.
+
+00:23:25.000 --> 00:23:28.000
+Daniel Sandler: It should feed back into…
+
+00:23:28.000 --> 00:23:30.000
+Daniel Sandler: Here.
+
+00:23:30.000 --> 00:23:31.000
+William Lin | Snowflake: Mmhm.
+
+00:23:31.000 --> 00:23:37.000
+Daniel Sandler: So that, if the user… like, it's not gonna be the same user interface.
+
+00:23:37.000 --> 00:23:46.000
+Daniel Sandler: It's definitely not going to be the same, like, that we know. But, like, you can just say, okay. How can you, like, just press the button, like, say.
+
+00:23:46.000 --> 00:23:51.000
+Daniel Sandler: Like the, the seated prompts here are like, what are the top prompts within these categories?
+
+00:23:51.000 --> 00:24:03.000
+Daniel Sandler: What are the, you know, like, so it's, like, ideally, it could be just as… it's almost like a landing page. It sees everything, and it makes it available to users.
+
+00:24:03.000 --> 00:24:07.000
+Daniel Sandler: But if that's not possible, when you go to co-work.
+
+00:24:07.000 --> 00:24:15.000
+Daniel Sandler: Then it's we're better off just like a simple prompt that that gives them like the list, you know.
+
+00:24:15.000 --> 00:24:20.000
+Daniel Sandler: Like, and, and directs the user, so it's, it's more like guided.
+
+00:24:21.000 --> 00:24:25.000
+Daniel Sandler: Um, and then shared artifacts will be the second thing.
+
+00:24:25.000 --> 00:24:27.000
+Daniel Sandler: So, getting to this…
+
+00:24:27.000 --> 00:24:29.000
+Daniel Sandler: Is… is one.
+
+00:24:30.000 --> 00:24:33.000
+Daniel Sandler: And getting to the shared artifacts is 2.
+
+00:24:34.000 --> 00:24:38.000
+Daniel Sandler: This thing, I think, is going to be hard.
+
+00:24:39.000 --> 00:24:41.000
+Daniel Sandler: That's gonna be hard.
+
+00:24:41.000 --> 00:24:43.000
+William Lin | Snowflake: Oh, well, then we quit.
+
+00:24:41.000 --> 00:24:43.000
+Stephanie Higa ❄️: Sorry, which part is going to turn?
+
+00:24:43.000 --> 00:24:45.000
+Daniel Sandler: the shared artifacts.
+
+00:24:44.000 --> 00:24:46.000
+Stephanie Higa ❄️: Oh, yeah.
+
+00:24:46.000 --> 00:24:47.000
+Daniel Sandler: shared artifacts.
+
+00:24:46.000 --> 00:24:57.000
+William Lin | Snowflake: When we create an agent, we create an agent inside a schema, a database, and a schema. So inside the same schema, we can create a table to hold these shared artifacts and…
+
+00:24:55.000 --> 00:25:05.000
+Daniel Sandler: Yes. Yeah, I mean, like, all this would… I mean, and these can live in different databases and schemas with the right RBAC. Well, let's just simplify. Yes, everything for this purpose.
+
+00:25:05.000 --> 00:25:14.000
+Daniel Sandler: One database, one schema, all the agents, and yes, you would land, like, the tool would collect the prompt.
+
+00:25:14.000 --> 00:25:15.000
+William Lin | Snowflake: Mmhm.
+
+00:25:14.000 --> 00:25:16.000
+Daniel Sandler: the response.
+
+00:25:16.000 --> 00:25:31.000
+Daniel Sandler: and keep on, like, storing that, and then registering it, and then you basically have a standard representation of all the prompts. They vary based off of, like… but you can…
+
+00:25:31.000 --> 00:25:36.000
+Daniel Sandler: You can classify each one of these after the fact.
+
+00:25:36.000 --> 00:25:40.000
+Daniel Sandler: Into a canonical, like, prompt.
+
+00:25:39.000 --> 00:25:41.000
+Stephanie Higa ❄️: Mm-hmm.
+
+00:25:40.000 --> 00:25:49.000
+Daniel Sandler: And that's what we want registered here, frequency and quality. Those are the ones that are brought to the surface.
+
+00:25:50.000 --> 00:25:57.000
+Daniel Sandler: That to me is the 1st basically building out the prompt library is the 1st one.
+
+00:25:57.000 --> 00:26:00.000
+Daniel Sandler: The second one is the shared artifacts.
+
+00:26:00.000 --> 00:26:04.000
+Daniel Sandler: And I think we could get to that one second.
+
+00:26:04.000 --> 00:26:07.000
+Daniel Sandler: We may not have a good answer for it, but…
+
+00:26:07.000 --> 00:26:14.000
+Daniel Sandler: I think this is the biggest problem right here. If you can solve for this, I think that buys us time up here.
+
+00:26:13.000 --> 00:26:16.000
+William Lin | Snowflake: Mm-hmm. Good, good.
+
+00:26:18.000 --> 00:26:24.000
+William Lin | Snowflake: Oh, please add me to that channel, the Slack channel with this markup.
+
+00:26:22.000 --> 00:26:25.000
+Stephanie Higa ❄️: I think you're already on it, William.
+
+00:26:24.000 --> 00:26:26.000
+William Lin | Snowflake: All righty.
+
+00:26:25.000 --> 00:26:27.000
+Stephanie Higa ❄️: Yeah.
+
+00:26:26.000 --> 00:26:27.000
+William Lin | Snowflake: What's that mean?
+
+00:26:27.000 --> 00:26:30.000
+Stephanie Higa ❄️: It's IntSD Chatbot Offering.
+
+00:26:31.000 --> 00:26:37.000
+William Lin | Snowflake: Oh, I see it. So many channels here. I mean, I have a long list of it.
+
+00:26:35.000 --> 00:26:36.000
+Stephanie Higa ❄️: Hehe.
+
+00:26:37.000 --> 00:26:38.000
+Stephanie Higa ❄️: Yeah.
+
+00:26:38.000 --> 00:26:39.000
+William Lin | Snowflake: Thank you.
+
+00:26:39.000 --> 00:26:44.000
+Stephanie Higa ❄️: Um, yeah, I have time today, so I can…
+
+00:26:44.000 --> 00:26:47.000
+Stephanie Higa ❄️: I can start working on this with Coco.
+
+00:26:46.000 --> 00:26:48.000
+Daniel Sandler: Yep.
+
+00:26:47.000 --> 00:26:50.000
+Stephanie Higa ❄️: What about you, William? How's your schedule?
+
+00:26:48.000 --> 00:26:50.000
+William Lin | Snowflake: Hello.
+
+00:26:50.000 --> 00:26:56.000
+William Lin | Snowflake: We can set up a time to meet tomorrow, so today we can dig into it.
+
+00:26:54.000 --> 00:27:00.000
+Daniel Sandler: I would just… so, William, I know you have content parts that are pretty hot and heavy, um…
+
+00:27:00.000 --> 00:27:03.000
+Daniel Sandler: Because we have a discovery session tomorrow.
+
+00:27:03.000 --> 00:27:04.000
+William Lin | Snowflake: Yes.
+
+00:27:03.000 --> 00:27:05.000
+Daniel Sandler: um…
+
+00:27:05.000 --> 00:27:10.000
+Daniel Sandler: So, um, it may make sense to regroup Wednesday.
+
+00:27:09.000 --> 00:27:10.000
+Stephanie Higa ❄️: Mm-hmm.
+
+00:27:10.000 --> 00:27:13.000
+William Lin | Snowflake: Oh, you mean Thursday. Wednesday is tomorrow.
+
+00:27:13.000 --> 00:27:15.000
+Stephanie Higa ❄️: Thursday, yeah.
+
+00:27:13.000 --> 00:27:23.000
+Daniel Sandler: Sorry, you're right, you're right. Uh, yes, good point. Uh, Thursday. And that gives Stephanie some time to sort of do some independent sort of work on this.
+
+00:27:13.000 --> 00:27:15.000
+William Lin | Snowflake: Good.
+
+00:27:19.000 --> 00:27:21.000
+William Lin | Snowflake: Mm-hmm.
+
+00:27:22.000 --> 00:27:24.000
+William Lin | Snowflake: Yes.
+
+00:27:22.000 --> 00:27:24.000
+Stephanie Higa ❄️: Mm-hmm.
+
+00:27:23.000 --> 00:27:35.000
+Daniel Sandler: And then divide and conquer, and then we can figure out, OK, you know, here's what's possible, and like the answer, it'd be great to fail fast and say, no, we actually need a custom app for this, and then we can get going.
+
+00:27:34.000 --> 00:27:36.000
+Stephanie Higa ❄️: Mm-hmm.
+
+00:27:35.000 --> 00:27:36.000
+William Lin | Snowflake: Thank you.
+
+00:27:35.000 --> 00:27:41.000
+Daniel Sandler: You know, but I'd love to sort of, like, reinforce the initial thinking here.
+
+00:27:40.000 --> 00:27:42.000
+William Lin | Snowflake: Mm-hmm. Yep.
+
+00:27:41.000 --> 00:27:50.000
+Daniel Sandler: You know, that this is doable, we just need some of the tooling and the orchestration, and that will give us.
+
+00:27:41.000 --> 00:27:43.000
+Stephanie Higa ❄️: Yep.
+
+00:27:50.000 --> 00:28:03.000
+Daniel Sandler: like, something that… and… and you probably want to prompt Coco… none of the… is this possible within AI Gateway, aka Natoma? Is this available in Observe? Is it partially available? Is it fully available?
+
+00:28:03.000 --> 00:28:09.000
+Daniel Sandler: No matter what the answer is, just doing due diligence on that front.
+
+00:28:08.000 --> 00:28:10.000
+William Lin | Snowflake: Mm-hmm.
+
+00:28:11.000 --> 00:28:17.000
+William Lin | Snowflake: Yeah. Stephanie, I will send you the meeting transcript as well once I get it.
+
+00:28:12.000 --> 00:28:14.000
+Stephanie Higa ❄️: Okay.
+
+00:28:16.000 --> 00:28:19.000
+Stephanie Higa ❄️: Okay. Yeah. Thanks, William.
+
+00:28:18.000 --> 00:28:20.000
+William Lin | Snowflake: Yeah, no problem.
+
+00:28:20.000 --> 00:28:22.000
+Stephanie Higa ❄️: Thanks, Dan.
+
+00:28:22.000 --> 00:28:31.000
+Daniel Sandler: Anytime. I do, I like this as a sort of good sort of reusable, it's pretty pervasive.
+
+00:28:23.000 --> 00:28:24.000
+William Lin | Snowflake: Thank you.
+
+00:28:31.000 --> 00:28:35.000
+Daniel Sandler: I think Invesco's trying to do. Makes a lot of sense, so…
+
+00:28:35.000 --> 00:28:40.000
+Daniel Sandler: Once Jake shared it with us, I'm like, this is definitely something we should work on.
+
+00:28:40.000 --> 00:28:41.000
+Stephanie Higa ❄️: Mm-hmm.
+
+00:28:43.000 --> 00:28:44.000
+Stephanie Higa ❄️: Cool.
+
+00:28:43.000 --> 00:28:44.000
+William Lin | Snowflake: Cool.
+
+00:28:43.000 --> 00:28:51.000
+Daniel Sandler: Don't… one thing is, don't be, uh… don't be shy about reaching out to Malini and her team.
+
+00:28:51.000 --> 00:28:52.000
+William Lin | Snowflake: Mmhm.
+
+00:28:51.000 --> 00:28:56.000
+Daniel Sandler: If we need some, like… but I also like to think that, um…
+
+00:28:51.000 --> 00:28:52.000
+Stephanie Higa ❄️: Thank you.
+
+00:28:56.000 --> 00:29:00.000
+Daniel Sandler: We can sort of be pretty handy when it comes to this stuff, so…
+
+00:28:59.000 --> 00:29:01.000
+Stephanie Higa ❄️: Mm-hmm.
+
+00:29:00.000 --> 00:29:05.000
+Daniel Sandler: Um, if we need some of the AI experts, you know.
+
+00:29:05.000 --> 00:29:11.000
+Daniel Sandler: I sort of think we're also part of that crowd, but…
+
+00:29:12.000 --> 00:29:15.000
+Daniel Sandler: You know, if we need reinforcements, don't be afraid.
+
+00:29:15.000 --> 00:29:16.000
+Stephanie Higa ❄️: Mm-hmm.
+
+00:29:16.000 --> 00:29:20.000
+Stephanie Higa ❄️: Well, I need to study for my Gen. AI. Exam, anyway. So.
+
+00:29:18.000 --> 00:29:20.000
+Daniel Sandler: There you go.
+
+00:29:22.000 --> 00:29:24.000
+Daniel Sandler: There you go. Awesome.
+
+00:29:23.000 --> 00:29:24.000
+Stephanie Higa ❄️: Okay.
+
+00:29:24.000 --> 00:29:26.000
+Daniel Sandler: Cool.
+
+00:29:24.000 --> 00:29:30.000
+Stephanie Higa ❄️: Cool. So I'll get started on prompting and researching with Coco.
+
+00:29:30.000 --> 00:29:34.000
+Daniel Sandler: Yeah, I'll schedule some time for Thursday, then, so we can regroup with Jake.
+
+00:29:34.000 --> 00:29:35.000
+Stephanie Higa ❄️: Great.
+
+00:29:35.000 --> 00:29:37.000
+William Lin | Snowflake: Okay. Great.
+
+00:29:36.000 --> 00:29:39.000
+Stephanie Higa ❄️: Cool. Thank you. Bye.
+
+00:29:37.000 --> 00:29:39.000
+William Lin | Snowflake: Thank you. Bye.
+
