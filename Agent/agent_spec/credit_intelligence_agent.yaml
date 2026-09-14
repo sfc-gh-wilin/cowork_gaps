@@ -1,0 +1,94 @@
+models:
+  orchestration: claude-3-5-sonnet
+
+instructions:
+  response: |
+    You are a Credit Investment Intelligence assistant serving the Invesco credit investment team.
+    Provide concise, data-driven answers with source citations.
+    When presenting data, prefer charts and tables over plain text.
+    Always cite the source document, table, or data source in your response.
+    Format monetary values in millions/billions as appropriate (e.g., $1.2B, $450M).
+    Use credit notation consistently (e.g., BB+, A-, AAA, Baa1).
+    For compliance alerts, always note severity and required action timelines per IPS policy.
+    For rating actions, always show the direction of change (upgrade/downgrade) and magnitude.
+    When referencing portfolio weights, express as percentage of total fund AUM.
+  orchestration: |
+    For structured data questions about portfolio holdings, ratings, credit spreads, fund flows,
+    compliance alerts, new issues, muni watchlist, or macro/rates data: use the credit_analyst tool.
+    For questions about research reports, analyst commentary, rating action notes,
+    sector analysis, market commentary, or investment policy: use the research_search tool.
+    For calculations, custom visualizations, scenario analysis, or data manipulation beyond
+    standard queries (e.g., correlation analysis, duration calculations, scenario modeling): use code_execution.
+    For any data that should be displayed as a chart or graph, use data_to_chart after retrieving the data.
+    When a user invokes a skill via /skill-name, follow that skill's instructions exactly.
+  sample_questions:
+    - question: "List all issuers with a rating or outlook change in the last 5 trading days, sorted by magnitude of impact."
+    - question: "Summarize the latest credit profile, leverage trend, and rating history for Ford Motor."
+    - question: "Compare average credit spreads for the Healthcare sector this month vs. last month."
+    - question: "What are today's open compliance alerts and what action is required?"
+    - question: "Show me the current macro and rates snapshot with key indicators."
+    - question: "What new issues are in the pipeline today, and which have already priced?"
+    - question: "Show me fund flow trends for the IG Core Bond Fund over the last 30 days."
+    - question: "What are the current muni watchlist changes and their risk levels?"
+
+tools:
+  - tool_spec:
+      type: cortex_analyst_text_to_sql
+      name: credit_analyst
+      description: >
+        Analyzes structured credit, portfolio, rating, spread, compliance, fund flow,
+        new issue, and macro rate data. Use for any data question involving numbers,
+        tables, time series, or structured records.
+
+  - tool_spec:
+      type: cortex_search
+      name: research_search
+      description: >
+        Searches credit research reports, rating action notes, sector analyses,
+        market commentary, and compliance/investment policy documents. Use for
+        any question requiring document content, analyst opinions, or policy guidance.
+
+  - tool_spec:
+      type: data_to_chart
+      name: data_to_chart
+      description: >
+        Generates interactive charts and visualizations from structured data results.
+        Use after retrieving data from credit_analyst to present trends, comparisons,
+        or distributions visually.
+
+  - tool_spec:
+      type: code_execution
+      name: code_execution
+      description: >
+        Executes Python for advanced analytics, custom calculations, correlation analysis,
+        scenario modeling, and complex visualizations using numpy, pandas, matplotlib, and plotly.
+
+tool_resources:
+  credit_analyst:
+    semantic_view: "CREDIT_INTELLIGENCE_DB.MAIN.CREDIT_INTELLIGENCE_SV"
+
+  research_search:
+    search_service: "CREDIT_INTELLIGENCE_DB.MAIN.RESEARCH_SEARCH"
+    max_results: "10"
+    title_column: "title"
+    id_column: "doc_id"
+    columns_and_descriptions:
+      content:
+        description: "Full text of the research document, rating action, or market commentary"
+        type: "string"
+        searchable: true
+        filterable: false
+      document_type:
+        description: "Type: CREDIT_REPORT, SECTOR_ANALYSIS, RATING_ACTION, MARKET_COMMENTARY, COMPLIANCE_POLICY"
+        type: "string"
+        searchable: false
+        filterable: true
+      sector:
+        description: "Market sector the document covers (e.g., Healthcare, Technology, Financials)"
+        type: "string"
+        searchable: false
+        filterable: true
+
+  code_execution:
+    artifact_repositories:
+      - SNOWFLAKE.SNOWPARK.PYPI_SHARED_REPOSITORY

@@ -80,4 +80,24 @@ What I need from you is:
 Base on these ideas, please help create a new Project Plan version:
   - /Users/wilin/Docs/LocalProjects/GitHub/cowork_gaps/20260909_ProjectPlan_V2.md
 
+# 20260911
+
+Base on plan:
+  - /Users/wilin/Docs/LocalProjects/GitHub/cowork_gaps/20260909_ProjectPlan_V2.md
+Please help implement as much as you can.
+  - Agent + Skills
+  - All Phases
+Please deploy to my Sandbox account for any implementation/testing/enhancement you need to get this to work.
+  - Create a new DB for this project.
+Snow CLI connection "wl_sandbox".
+Generate a full report and user guide after in folder:
+  - /Users/wilin/Docs/LocalProjects/GitHub/cowork_gaps/
+
+# 20260914
+
+Help update file:
+  - /Users/wilin/Docs/LocalProjects/GitHub/cowork_gaps/20260911_User_Guide.md
+Still lost looking at the md file.
+Please add a section to show full step-by-step to test this project with all features it can support.
+
 # END
